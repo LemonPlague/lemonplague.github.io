@@ -29,11 +29,13 @@ header a {
     text-decoration: none;
 }
 header ul {
-    height: 50px;
     list-style-type: none;
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+header li {
+    background-color: red;
 }
 
 /* left - logo */
@@ -41,16 +43,12 @@ header ul {
 #leftbox {
     float: left;
     width: 15%;
-    height: 50px;
-}
-header .left {
-    text-indent: -9999999px;
+    height: inherit;
     background-image: url("images/2nature_logo_06.jpg");
+    text-indent: -9999999px;
     background-size: 47px;
     background-repeat: no-repeat;
-    width: 47px;
-    position: relative;
-    margin-top: -16px;
+    margin-left: 40px;
 }
 
 /* mid - nav */
@@ -58,7 +56,7 @@ header .left {
 #middlebox {
     float: left;
     width: 65%;
-    height: 50px;
+    height: 40px;
 }
 header .mid {
     margin-top: -13px;
