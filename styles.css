@@ -1,52 +1,132 @@
 /* full page */
+
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+/* link interactions */
+
+a:hover {
+    text-decoration: underline;
+    text-decoration-color: seagreen;
+    text-decoration-style: solid;
+}
+a:active {
+    text-decoration: underline;
+    text-decoration-color: rgb(8, 243, 110);
+    text-decoration-style: solid;
 }
 
 /* header */
 
 header {
     background-color: black;
+    height: 40px;
 }
-header div {
-    height: 50px;
-    display: flex;
-    flex-direction: row;
-}
-header li {
+header a {
     color: white;
-    padding: 5px;
-    margin: 5px;
+    text-decoration: none;
 }
 header ul {
-    display: flex;
-    flex-direction: row;
-    margin: auto;
     height: 50px;
     list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
-.nav img {
+/* left - logo */
+
+#leftbox {
+    float: left;
+    width: 15%;
     height: 50px;
-    width: 50px;
-    margin: 0 0 0 20;
+}
+header .left {
+    text-indent: -9999999px;
+    background-image: url("images/2nature_logo_06.jpg");
+    background-size: 47px;
+    background-repeat: no-repeat;
+    width: 47px;
+    position: relative;
+    margin-top: -16px;
 }
 
+/* mid - nav */
 
-header .nav {
-    background-color:red;
-    
+#middlebox {
+    float: left;
+    width: 65%;
+    height: 50px;
+}
+header .mid {
+    margin-top: -13px;
+    padding: 10px;
 }
 
-figure {
+/* right - options */
+
+#rightbox {
+    float: right;
+    width: 20%;
+    height: 50px;
+    position: absolute;
+    right: 30px;
+}
+header .right {
+    margin-top: -5px;
+}
+
+header .search {
+    background-image: url("images/search.png");
+    background-size: 20px;
+    background-repeat: no-repeat;
+    width: 40px;
     display: inline-block;
-    background-color: green;
-    height: 50px;
-    width: 50px;
+    text-indent: -99999999px;
+}
+header .login {
+    background-image: url("images/login.png");
+    background-size: 22px;
+    background-repeat: no-repeat;
+    width: 40px;
+    display: inline-block;
+    text-indent: -99999999px;
+}
+header .cart {
+    background-image: url("images/cart.png");
+    background-size: 30px;
+    background-repeat: no-repeat;
+    width: 40px;
+    display: inline-block;
+    text-indent: -9999999px;
 }
 
-figure img {
-    height: 50px;
-    width: 50px;
+/* responsive rules */
+
+@media screen and (max-width: 800px) {
+    header {
+        background-color: hotpink;
+    }
+}
+
+
+/* banner */
+
+.banner {
+    height: 600px;
+    background-image: url("images/2nature_banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+h1 {
+    background-color: red;
+    height: 60px;
+    width: 300px;
+    position: absolute;
+    bottom: 10px;
+    text-transform: uppercase;
 }
