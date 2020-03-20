@@ -24,18 +24,20 @@ header {
     background-color: black;
     height: 40px;
 }
-header a {
-    color: white;
-    text-decoration: none;
-}
 header ul {
     list-style-type: none;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-top: 0;
+    line-height: 40px;
 }
 header li {
-    background-color: red;
+}
+header a {
+    color: white;
+    text-decoration: none;
+
 }
 
 /* left - logo */
@@ -59,8 +61,8 @@ header li {
     height: 40px;
 }
 header .mid {
-    margin-top: -13px;
-    padding: 10px;
+    height: 40px;
+    width: 70px;
 }
 
 /* right - options */
@@ -68,12 +70,12 @@ header .mid {
 #rightbox {
     float: right;
     width: 20%;
-    height: 50px;
+    height: 40px;
     position: absolute;
     right: 30px;
 }
 header .right {
-    margin-top: -5px;
+    height: 40px;
 }
 
 header .search {
@@ -81,7 +83,7 @@ header .search {
     background-size: 20px;
     background-repeat: no-repeat;
     width: 40px;
-    display: inline-block;
+    background-position: center;
     text-indent: -99999999px;
 }
 header .login {
@@ -89,7 +91,7 @@ header .login {
     background-size: 22px;
     background-repeat: no-repeat;
     width: 40px;
-    display: inline-block;
+    background-position: center;
     text-indent: -99999999px;
 }
 header .cart {
@@ -97,7 +99,7 @@ header .cart {
     background-size: 30px;
     background-repeat: no-repeat;
     width: 40px;
-    display: inline-block;
+    background-position: center;
     text-indent: -9999999px;
 }
 
