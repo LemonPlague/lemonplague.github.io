@@ -18,67 +18,44 @@ a:active {
     text-decoration-style: solid;
 }
 
-/* header */
+/* header general format */
 
 header {
     background-color: black;
-    height: 40px;
+    display: flex;
+    flex-direction: row;
+}
+header div {
+    background-color: royalblue;
+    margin: auto;
 }
 header ul {
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    margin-top: 0;
-    line-height: 40px;
+    background-color: khaki;
 }
 header li {
+    background-color: red;
 }
 header a {
     color: white;
     text-decoration: none;
-
 }
+
 
 /* left - logo */
 
-#leftbox {
-    float: left;
-    width: 15%;
-    height: inherit;
-    background-image: url("images/2nature_logo_06.jpg");
-    text-indent: -9999999px;
-    background-size: 47px;
-    background-repeat: no-repeat;
-    margin-left: 40px;
-}
+
 
 /* mid - nav */
 
-#middlebox {
-    float: left;
-    width: 65%;
-    height: 40px;
-}
-header .mid {
-    height: 40px;
-    width: 70px;
-}
 
 /* right - options */
 
-#rightbox {
-    float: right;
-    width: 20%;
-    height: 40px;
-    position: absolute;
-    right: 30px;
-}
-header .right {
-    height: 40px;
-}
 
-header .search {
+
+eader .search {
     background-image: url("images/search.png");
     background-size: 20px;
     background-repeat: no-repeat;
@@ -86,7 +63,7 @@ header .search {
     background-position: center;
     text-indent: -99999999px;
 }
-header .login {
+eader .login {
     background-image: url("images/login.png");
     background-size: 22px;
     background-repeat: no-repeat;
@@ -94,7 +71,7 @@ header .login {
     background-position: center;
     text-indent: -99999999px;
 }
-header .cart {
+eader .cart {
     background-image: url("images/cart.png");
     background-size: 30px;
     background-repeat: no-repeat;
@@ -130,3 +107,22 @@ h1 {
     bottom: 10px;
     text-transform: uppercase;
 }
+
+
+eftbox {
+    height: inherit;
+    background-image: url("images/2nature_logo_06.jpg");
+    text-indent: -9999999px;
+    background-size: 47px;
+    background-repeat: no-repeat;
+    margin-left: 40px;
+
+
+    
+#middlebox {
+    height: 40px;
+
+
+    #rightbox {
+        height: 40px;
+    
