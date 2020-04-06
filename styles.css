@@ -30,10 +30,10 @@ header {
 header div {
     margin: auto;
     height: inherit;
-    background-color: red;
 }
 header ul {
-    list-style-type: none;
+    list-style: none;
+    padding: 0;
     display: flex;
     flex-direction: row;
     height: inherit;
@@ -42,7 +42,6 @@ header ul {
 header li {
     line-height: 40px;
     height: 40x;
-    background-color: blue;
 }
 header a {
     color: white;
@@ -54,6 +53,7 @@ header a {
 
 ul .logo {
     position: relative;
+    width: 80;
 }
 
 /* mid - nav */
@@ -79,17 +79,17 @@ header .midlast {
 header .search {
     position: relative;
     margin-top: 5px;
-    width: 30;
+    width: 35;
 }
 header .login {
     position: relative;
     margin-top: 6px;
-    width: 30;
+    width: 35;
 }
 header .cart {
     position: relative;
     margin-top: 8px;
-    width: 30;
+    width: 35;
 }
 
 /* responsive rules */
@@ -109,25 +109,27 @@ header .cart {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    text-align: center;
 }
-
-h1 {
-    background-color: red;
-    height: 60px;
-    width: 300px;
-    text-transform: uppercase;
-}
-
 span:before {
     content: ' ';
     width: 100%;
     height: 1em;
     display: block;
 }
+h1 {
+    background-color: red;
+    height: 60px;
+    width: 300px;
+    text-transform: uppercase;
+    position: relative;
+    margin-top: 200px;
+    margin-left: 20%;
+    font-weight: 500;
 
-span {
-    display: block;
+}
+section .twonature {
+    position: relative;
+    margin-left: 20%;
 }
 
 /* section: Current */
