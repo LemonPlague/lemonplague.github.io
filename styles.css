@@ -118,13 +118,14 @@ span:before {
 }
 h1 {
     background-color: red;
-    height: 60px;
-    width: 300px;
     text-transform: uppercase;
     position: relative;
     margin-top: 200px;
     margin-left: 20%;
     font-weight: 500;
+    font-size: 7vmax;
+    
+    width: 80%;
 
 }
 section .twonature {
